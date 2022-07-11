@@ -133,6 +133,8 @@ public class lms extends student_details implements ActionListener{
     static JLabel details_label8;
     static JLabel details_label9;
     static JLabel details_label10;
+    static JLabel details_label11;
+    static JLabel details_label12;
 
     static JFrame inorder;
     static JLabel inorder_label1;
@@ -147,10 +149,6 @@ public class lms extends student_details implements ActionListener{
     static JLabel inorder_label10;
     static JLabel inorder_label11;
     static JLabel inorder_label12;
-    static JLabel inorder_label13;
-    static JLabel inorder_label14;
-    static JLabel inorder_label15;
-    static JLabel inorder_label16;
     static JButton inorder_back;
 
     public static void add_books_to_queue(){
@@ -450,35 +448,357 @@ public class lms extends student_details implements ActionListener{
         inorder_back.setBounds(0,0,40,20);
         inorder_back.setFocusable(false);
 
-        inorder_label1=new JLabel("Java");
-        inorder_label1.setBounds(200,200,200,40);
+        if(added_book_name!=null && added_quantity!=0){
+            inorder_label12=new JLabel(added_book_name+String.valueOf(added_quantity));
+            inorder_label12.setBounds(200,160,200,40);
+            if(deleted_book_name!=null ){
+                if(deleted_book_name.equals("Java")){
+                    inorder_label1=new JLabel();
+                    inorder_label1.setBounds(200,200,200,40);
 
-        inorder_label2=new JLabel("C++");
-        inorder_label2.setBounds(200,240,200,40);
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
         
-        inorder_label3=new JLabel("C");
-        inorder_label3.setBounds(200,280,200,40);
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
 
-        inorder_label4=new JLabel("Python");
-        inorder_label4.setBounds(200,320,200,40);
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
 
-        inorder_label5=new JLabel("HTML");
-        inorder_label5.setBounds(200,360,200,40);
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
 
-        inorder_label6=new JLabel("CSS");
-        inorder_label6.setBounds(200,400,200,40);
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
 
-        inorder_label7=new JLabel("JavaScript");
-        inorder_label7.setBounds(200,440,200,40);
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
 
-        inorder_label8=new JLabel("PHP");
-        inorder_label8.setBounds(200,480,200,40);
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
 
-        inorder_label9=new JLabel("C#");
-        inorder_label9.setBounds(200,520,200,40);
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
 
-        inorder_label10=new JLabel("Ruby");
-        inorder_label10.setBounds(200,560,200,40);
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("C++")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel();
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("C")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel();
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("Python")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel();
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("HTML")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel();
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("CSS")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel();
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("JavaScript")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel();
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("PHP")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel();
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("C#")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel();
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel("Ruby");
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+                else if(deleted_book_name.equals("Ruby")){
+                    inorder_label1=new JLabel("Java");
+                    inorder_label1.setBounds(200,200,200,40);
+        
+                    inorder_label2=new JLabel("C++");
+                    inorder_label2.setBounds(200,240,200,40);
+        
+                    inorder_label3=new JLabel("C");
+                    inorder_label3.setBounds(200,280,200,40);
+        
+                    inorder_label4=new JLabel("Python");
+                    inorder_label4.setBounds(200,320,200,40);
+        
+                    inorder_label5=new JLabel("HTML");
+                    inorder_label5.setBounds(200,360,200,40);
+        
+                    inorder_label6=new JLabel("CSS");
+                    inorder_label6.setBounds(200,400,200,40);
+        
+                    inorder_label7=new JLabel("JavaScript");
+                    inorder_label7.setBounds(200,440,200,40);
+        
+                    inorder_label8=new JLabel("PHP");
+                    inorder_label8.setBounds(200,480,200,40);
+        
+                    inorder_label9=new JLabel("C#");
+                    inorder_label9.setBounds(200,520,200,40);
+        
+                    inorder_label10=new JLabel();
+                    inorder_label10.setBounds(200,560,200,40);
+                }
+            }
+        }
+        else{
+            inorder_label12=new JLabel();
+            inorder_label12.setBounds(200,160,200,40);
+
+            inorder_label1=new JLabel("Java");
+            inorder_label1.setBounds(200,200,200,40);
+
+            inorder_label2=new JLabel("C++");
+            inorder_label2.setBounds(200,240,200,40);
+
+            inorder_label3=new JLabel("C");
+            inorder_label3.setBounds(200,280,200,40);
+
+            inorder_label4=new JLabel("Python");
+            inorder_label4.setBounds(200,320,200,40);
+
+            inorder_label5=new JLabel("HTML");
+            inorder_label5.setBounds(200,360,200,40);
+
+            inorder_label6=new JLabel("CSS");
+            inorder_label6.setBounds(200,400,200,40);
+
+            inorder_label7=new JLabel("JavaScript");
+            inorder_label7.setBounds(200,440,200,40);
+
+            inorder_label8=new JLabel("PHP");
+            inorder_label8.setBounds(200,480,200,40);
+
+            inorder_label9=new JLabel("C#");
+            inorder_label9.setBounds(200,520,200,40);
+
+            inorder_label10=new JLabel("Ruby");
+            inorder_label10.setBounds(200,560,200,40);
+        }
+        
 
         inorder_label11=new JLabel("List of books available in the library ");
         inorder_label11.setBounds(200,600,200,40);
@@ -491,6 +811,7 @@ public class lms extends student_details implements ActionListener{
         inorder.setVisible(true);
         inorder.add(inorder_back);
         inorder.add(inorder_label11);
+        inorder.add(inorder_label12);
         inorder.add(inorder_label1);
         inorder.add(inorder_label2);
         inorder.add(inorder_label3);
@@ -579,37 +900,672 @@ public class lms extends student_details implements ActionListener{
     }
     public static void details(){
         details_label=new JLabel("Book Names and quantity");
+        details_label.setBounds(200,200,200,40);
 
-        details_label1=new JLabel("Java "+" 10");
-        details_label1.setBounds(50,50,200,50);
+        if(added_book_name!=null && added_quantity!=0){
+            details_label11=new JLabel(added_book_name+" "+String.valueOf(added_quantity));
+            details_label11.setBounds(50,50,200,50);
 
-        details_label2=new JLabel("C++ "+" 20");
-        details_label2.setBounds(50,100,200,50);
+            if(updated_book_name!=null && updated_quantity!=0){
+                if(updated_book_name=="Java" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+String.valueOf(updated_quantity));
+                    details_label1.setBounds(50,100,200,50);
 
-        details_label3=new JLabel("C "+" 11");
-        details_label3.setBounds(50,150,200,50);
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
 
-        details_label4=new JLabel("Python "+" 23");
-        details_label4.setBounds(50,200,200,50);
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
 
-        details_label5=new JLabel("HTML "+" 45");
-        details_label5.setBounds(50,250,200,50);
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
 
-        details_label6=new JLabel("CSS "+" 5");
-        details_label6.setBounds(50,300,200,50);
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
 
-        details_label7=new JLabel("JavaScript "+" 100");
-        details_label7.setBounds(50,350,200,50);
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
 
-        details_label8=new JLabel("PHP "+" 110");
-        details_label8.setBounds(50,400,200,50);
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
 
-        details_label9=new JLabel("SQL "+" 101");
-        details_label9.setBounds(50,450,200,50);
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
 
-        details_label10=new JLabel("Ruby "+" 1");
-        details_label10.setBounds(50,500,200,50);
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
 
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="C" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+String.valueOf(updated_quantity));
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="C++" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+String.valueOf(updated_quantity));
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="Python" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+String.valueOf(updated_quantity));
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="C#" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+String.valueOf(updated_quantity));
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="Ruby" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+String.valueOf(updated_quantity));
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="PHP" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+String.valueOf(updated_quantity));
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="HTML" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+String.valueOf(updated_quantity));
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="CSS" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+String.valueOf(updated_quantity));
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(updated_book_name=="Javascript" && updated_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+String.valueOf(updated_quantity));
+                    details_label10.setBounds(50,550,200,50);
+                }  
+            }
+            else if(deleted_book_name!=null && deleted_quantity!=0){
+                if(deleted_book_name=="Java" && deleted_quantity!=0){
+                    details_label1=new JLabel();
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="C" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel();
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="C++" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel();
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="Python" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel();
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="C#" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel();
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="Ruby" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel();
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="PHP" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel();
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="HTML" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel();
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="CSS" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel();
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel("Javascript"+" "+"10");
+                    details_label10.setBounds(50,550,200,50);
+                }
+                else if(deleted_book_name=="Javascript" && deleted_quantity!=0){
+                    details_label1=new JLabel("Java"+" "+"10");
+                    details_label1.setBounds(50,100,200,50);
+
+                    details_label2=new JLabel("C"+" "+"10");
+                    details_label2.setBounds(50,150,200,50);
+
+                    details_label3=new JLabel("C++"+" "+"10");
+                    details_label3.setBounds(50,200,200,50);
+
+                    details_label4=new JLabel("Python"+" "+"10");
+                    details_label4.setBounds(50,250,200,50);
+
+                    details_label5=new JLabel("C#"+" "+"10");
+                    details_label5.setBounds(50,300,200,50);
+
+                    details_label6=new JLabel("Ruby"+" "+"10");
+                    details_label6.setBounds(50,350,200,50);
+
+                    details_label7=new JLabel("PHP"+" "+"10");
+                    details_label7.setBounds(50,400,200,50);
+
+                    details_label8=new JLabel("HTML"+" "+"10");
+                    details_label8.setBounds(50,450,200,50);
+
+                    details_label9=new JLabel("CSS"+" "+"10");
+                    details_label9.setBounds(50,500,200,50);
+
+                    details_label10=new JLabel();
+                    details_label10.setBounds(50,550,200,50);
+                }
+            } 
+        }
+        else{
+            details_label11=new JLabel();
+            details_label11.setBounds(50,50,200,50);
+
+            details_label1=new JLabel("Java"+" 10");
+            details_label1.setBounds(50,100,200,50);
+
+            details_label2=new JLabel("C"+" 10");
+            details_label2.setBounds(50,150,200,50);
+
+            details_label3=new JLabel("C++"+" 10");
+            details_label3.setBounds(50,200,200,50);
+
+            details_label4=new JLabel("Python"+" 10");
+            details_label4.setBounds(50,250,200,50);
+
+            details_label5=new JLabel("C#"+" 10");
+            details_label5.setBounds(50,300,200,50);
+
+            details_label6=new JLabel("Ruby"+" 10");
+            details_label6.setBounds(50,350,200,50);
+
+            details_label7=new JLabel("PHP"+" 10");
+            details_label7.setBounds(50,400,200,50);
+
+            details_label8=new JLabel("HTML"+" 10");
+            details_label8.setBounds(50,450,200,50);
+
+            details_label9=new JLabel("CSS"+" 10");
+            details_label9.setBounds(50,500,200,50);
+
+            details_label10=new JLabel("Javascript"+" 10");
+            details_label10.setBounds(50,550,200,50);
+        }
+        
         details_back=new JButton("Back");
         details_back.setBounds(0,0,20,40);
         details_back.addActionListener(new lms());
@@ -621,6 +1577,7 @@ public class lms extends student_details implements ActionListener{
         details.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         details.setResizable(false);
         details.add(details_label);
+        details.add(details_label11);
         details.add(details_label1);
         details.add(details_label2);
         details.add(details_label3);
