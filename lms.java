@@ -328,9 +328,9 @@ public class lms extends student_details implements ActionListener{
         admin_functions.add(admin_functions_back);
         admin_functions.add(admin_functions_addbook);
         admin_functions.add(admin_functions_deletebook);
-        admin_functions.add(admin_functions_updatebook);
+        //admin_functions.add(admin_functions_updatebook);
         admin_functions.add(admin_functions_printdetails);
-        admin_functions.add(admin_functions_printinorder);
+        //admin_functions.add(admin_functions_printinorder);
 
     }
     public static void issue(){
@@ -1577,7 +1577,7 @@ public class lms extends student_details implements ActionListener{
                 JOptionPane.showMessageDialog(null,"No Book Found");
             } 
         }
-        else{
+        else if(added_book_name==null && added_quantity==0){
             details_label11=new JLabel();
             details_label11.setBounds(50,50,200,50);
 
